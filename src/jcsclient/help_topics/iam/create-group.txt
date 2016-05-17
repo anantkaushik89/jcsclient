@@ -1,0 +1,24 @@
+NAME:
+    create-group
+
+
+DESCRIPTION:
+    Creates a new group for your JCS account.
+
+
+SYNOPSIS:
+    create-user --name <value> [--description <value>]
+
+
+OPTIONS:
+    --name (string)
+    The name of the group to create.
+
+    --description (string)
+    description for the group.
+    This parameter is optional.
+
+EXAMPLES:
+    jcs iam create-group --name group1
+
+    jcs iam create-group --name group2 --description this is a test group

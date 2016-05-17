@@ -144,7 +144,7 @@ class Controller(object):
         parser.add_argument('--user-id')
         args = parser.parse_args(args)
         if args.user_name is None and args.user_id is None:
-            parser.error("at least one of --name and --id required")
+            parser.error("at least one of --user-name and --user-id required")
         utils.populate_params_from_cli_args(params, args)
         return requestify.make_request(self.url, self.verb, self.headers,
                                        params)

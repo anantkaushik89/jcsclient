@@ -1,1 +1,64 @@
-Work In Progress.
+
+NAME :
+    vpc
+
+
+DESCRIPTION :
+    JCS allows you to host your instances within
+    a virtual private cloud that is dedicated to
+    your needs. A user can create subnet inside
+    a vpc, attach RJIL ips to instances, create
+    security groups and create route-tables
+
+AVAILABLE COMMANDS :
+
+    create-vpc
+
+    delete-vpc
+
+    describe-vpcs
+
+    create-subnet
+
+    delete-subnet
+
+    describe-subnets
+
+    create-security-group
+
+    authorize-security-group-ingress
+
+    authorize-security-group-egress
+
+    revoke-security-group-ingress
+
+    revoke-security-group-egress
+
+    describe-security-groups
+
+    delete-security-group
+
+    create-route
+
+    delete-route
+
+    create-route-table
+
+    delete-route-table
+
+    associate-route-table
+
+    disassociate-route-table
+
+    describe-route-tables
+
+    allocate-address
+
+    associate-address
+
+    disassociate-address
+
+    release-address
+
+    describe-addresses
+

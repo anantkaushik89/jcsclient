@@ -1,0 +1,38 @@
+
+NAME:
+    check-user-in-group
+
+
+DESCRIPTION:
+    Check if the user belongs to a group in your JCS account.
+
+
+SYNOPSIS:
+    check-user-in-group [--user-name <value>] [--group-name <value>]
+    check-user-in-group [--user-id <value>] [--group-name <value>]
+    check-user-in-group [--user-name <value>] [--group-id <value>] 
+    check-user-in-group [--user-id <value>] [--group-id <value>]
+
+
+OPTIONS:
+    --user-name (string)
+    The name of user to be checked in the group.
+
+    --user-id (string)
+    The id of the user to be checked in the group.
+
+    --group-name (string)
+    The name of the group, the user should be checked to. 
+
+    --group-id (string)
+    The id of the group, the user should be checked to.
+
+
+EXAMPLES:
+    jcs iam check-user-in-group --user-name test-user --group-name test-group
+
+    jcs iam check-user-in-group --user-id 123456 --group-id group1111
+
+    jcs iam check-user-in-group --user-name test-user --group-name test-group
+
+    jcs iam check-user-in-group --user-id 123 --group-id group1111

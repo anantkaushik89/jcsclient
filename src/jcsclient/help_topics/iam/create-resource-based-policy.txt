@@ -1,0 +1,21 @@
+
+NAME:
+    create-resource-based-policy
+
+
+DESCRIPTION:
+    Creates a resource based policy in your JCS account.
+
+
+SYNOPSIS:
+    create-resource-based-policy --policy-document <value> 
+
+
+OPTIONS:
+    --policy-document (Policy Json)
+    The Url Encoded Policy Document  for a resource based policy.
+
+EXAMPLES:
+    jcs iam create-resource-based-policy --policy-document "{\"name\": \"RBP-1\", \"statement\": [{\"action\": [\"jrn:jcs:dss:ListBucket\"], \"principle\": [\"jrn:jcs:iam:162791231507:User:123\"], \"effect\": \"allow\"}]}"
+
+

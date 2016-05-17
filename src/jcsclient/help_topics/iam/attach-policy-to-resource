@@ -1,0 +1,31 @@
+
+NAME:
+    attach-policy-to-resource
+
+
+DESCRIPTION:
+    Attaches a resource based policy to a list of resources.
+
+
+SYNOPSIS:
+    attach-policy-to-resource --policy-id <value> --resource <value> 
+    attach-policy-to-resource --policy-name <value> --resource <value> 
+
+
+OPTIONS:
+    --resource(resource json)
+    The resource jrns to be attached to the policy.
+
+    --policy-name (string)
+    The policy name of the resource based policy to be attached.
+
+    --policy-id (string)
+    The policy id of the resource based policy to be attached. 
+
+EXAMPLES:
+    jcs iam attach-policy-to-resource --policy-id efef553d4a3f4a83b0824aad679c1517 --resource 
+"{\"resource\": [\"jrn:jcs:dss:b892aeb20d3849878b4d32192354bda0:Bucket:12345\"]}"
+
+
+    jcs iam attach-policy-to-resource --policy-name RBP-1 --resource 
+"{\"resource\":[\"jrn:jcs:dss:b892aeb20d3849878b4d32192354bda0:Bucket:12345\"]}"

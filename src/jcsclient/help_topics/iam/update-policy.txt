@@ -1,0 +1,27 @@
+
+NAME:
+    update-policy
+
+
+DESCRIPTION:
+    Updates an existing policy for your JCS account.
+
+
+SYNOPSIS:
+    update-policy --name <value> | --id <value> --policy-document <value> 
+
+
+OPTIONS:
+    --name (string)
+    The name of the policy.
+
+    --id (string)
+    The id of the policy.
+
+    --policy-document (string)
+    The policy document for the policy
+
+EXAMPLES:
+    jcs iam create-policy --name Policy123 --policy-document "{\"name\": \"a1bc2443\", \"statement\": [{\"action\": [\"jrn:jcs:dss:ListBucket\"], \"resource\": [\"jrn:jcs:dss:012345678901:Bucket:Bucket234\"], \"effect\": \"allow\"}]}"
+	
+	jcs iam create-policy --id 1a4e789ac85c985b3495f3495743a5e8 --policy-document "{\"name\": \"a1bc2443\", \"statement\": [{\"action\": [\"jrn:jcs:dss:ListBucket\"], \"resource\": [\"jrn:jcs:dss:012345678901:Bucket:Bucket234\"], \"effect\": \"allow\"}]}"

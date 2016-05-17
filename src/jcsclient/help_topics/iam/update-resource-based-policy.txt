@@ -1,0 +1,28 @@
+
+NAME:
+    update-resource-based-policy
+
+
+DESCRIPTION:
+    Updates a resource based policy in your JCS account.
+	
+
+SYNOPSIS:
+    update-resource-based-policy --policy-document <value> --name <value> 
+    update-resource-based-policy --policy-document <value> --id <value>
+
+OPTIONS:
+    --policy-document (Policy Json)
+    The Policy Document for updating the resource based policy.
+
+    --name (string)
+    The name of the policy which is to be updated.
+
+    --id (string)
+    The id of the policy which is to be updated.
+
+EXAMPLES:
+    jcs iam update-resource-based-policy --policy-document "{\"name\": \"RBP-1\", \"statement\": [{\"action\": [\"jrn:jcs:dss:ListBucket\"], \"principle\": [\"jrn:jcs:iam:162791231507:User:123\"], \"effect\": \"allow\"}]}" --name RBP-1
+    jcs iam update-resource-based-policy --policy-document "{\"name\": \"RBP-1\", \"statement\": [{\"action\": [\"jrn:jcs:dss:ListBucket\"], \"principle\": [\"jrn:jcs:iam:162791231507:User:123\"], \"effect\": \"allow\"}]}" --id efef553d4a3f4a83b0824aad679c1517
+
+

@@ -1,0 +1,18 @@
+
+NAME:
+    list-policies
+
+
+DESCRIPTION:
+    Lists all policies for your JCS account.
+
+
+SYNOPSIS:
+    list-policies
+
+
+OPTIONS:
+
+
+EXAMPLES:
+    jcs iam list-policies

@@ -1,0 +1,36 @@
+
+
+NAME:
+    update-user
+
+DESCRIPTION:
+    Updates the email_id or password of a user.
+
+SYNOPSIS:
+    update-user [--id <value>] [--name <value>] [--new-email <value>] [--new-password <value>]
+
+OPTIONS:
+    --id (string)
+    The id of the user which needs to be updated.
+
+    --name (string)
+    The name of the user which needs to be updated. 
+
+    Atleast one of --id or --name should be specified.
+
+    --new-email (string)
+     New email of the user
+
+    --new-password (string)
+    New password of the user. 
+
+    Alreast one of --new-email or --new-password needs to be specified.
+
+EXAMPLES:
+   jcs iam update-user --id  efef553d4a3f4a83b0824aad679c1517 --new-email test_group_1@xyz.com 
+
+   jcs iam update-user --name user123 --new-password ReliAn12!33
+
+   jcs iam update-user --id efef553d4a3f4a83b0824aad679c1517 --new-password abce!QQ12a
+
+

@@ -1,0 +1,30 @@
+NAME:
+    get-user
+
+
+DESCRIPTION:
+    Retrieves information for a specified user in your JCS account.
+
+
+SYNOPSIS:
+    get-user [--name <value>] 
+    get-user [--id <value>]
+
+
+OPTIONS:
+    --name (string)
+    The name of the user to retrieve information for.
+    This parameter is optional.
+
+
+    --id (string)
+    The id of the user to retrieve information for
+    This parameter is optional.
+
+    Either of name or id has to be supplied.
+
+EXAMPLES:
+    jcs iam get-user --name user1
+
+    jcs iam get-user --id 121132143253444444444444
+

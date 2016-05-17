@@ -26,7 +26,7 @@ VERSION = '\nJCS cli 1.0 (April 15 2016)'
 
 ERROR_STRING = (
     "jcs <service> <API> [parameters]\n"
-    " Available Services: compute, dss, vpc, iam, rds\n"
+    " Available Services: compute, dss, vpc, iam, rds, mon\n"
     "\n"
     " To see help text, you can run:\n"
     "  jcs help\n"

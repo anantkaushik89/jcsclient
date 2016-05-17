@@ -75,6 +75,10 @@ def modify_db_instance(url, verb, headers, version, args):
     args = args[1:]
     parser = utils.get_argument_parser()
     parser.add_argument('--db-instance-identifier', required=True)
+    parser.add_argument('--preferred-maintenance-window', required=False)
+    parser.add_argument('--preferred-backup-window', required=False)
+    parser.add_argument('--backup-retention-period', required=False)
+    parser.add_argument('--new-db-instance-identifier', required=False)
     args = parser.parse_args(args)
     utils.populate_params_from_cli_args(params, args)
     return requestify.make_request(url, verb, headers, params)

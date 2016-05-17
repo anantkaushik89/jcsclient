@@ -1,0 +1,38 @@
+
+NAME:
+    remove-user-from-group
+
+
+DESCRIPTION:
+    Remove the user from a group in your JCS account.
+
+
+SYNOPSIS:
+    remove-user-from-group [--user-name <value>] [--group-name <value>]
+    remove-user-from-group [--user-id <value>] [--group-name <value>]
+    remove-user-from-group [--user-name <value>] [--group-id <value>] 
+    remove-user-from-group [--user-id <value>] [--group-id <value>]
+
+
+OPTIONS:
+    --user-name (string)
+    The name of user to be removed from the group.
+
+    --user-id (string)
+    The id of the user to be removed from the group.
+
+    --group-name (string)
+    The name of the group, the user should be removed from. 
+
+    --group-id (string)
+    The id of the group, the user should be removed from.
+
+
+EXAMPLES:
+    jcs iam remove-user-from-group --user-name test-user --group-name test-group
+
+    jcs iam remove-user-from-group --user-id 123456 --group-id group1111
+
+    jcs iam remove-user-from-group --user-name test-user --group-name test-group
+
+    jcs iam remove-user-from-group --user-id 123 --group-id group1111

@@ -1,0 +1,25 @@
+
+NAME:
+    get-resource-based-policy-summary
+
+
+DESCRIPTION:
+    Retrieves summary information about a specified resource based policy including the attached resources.
+
+
+SYNOPSIS:
+    get-resource-based-policy-summary --name <value> 
+    get-resource-based-policy-summary --id <value>
+
+
+OPTIONS:
+    --name (string)
+    The name of the resource based policy whose summary is to be fetched.
+
+    --id (string)
+    The id of the resource based policy whose summary is to be fetched.
+
+EXAMPLES:
+    jcs iam get-resource-based-policy-summary --name RBP-1
+
+    jcs iam get-resource-based-policy-summary --id efef553d4a3f4a83b0824aad679c1517

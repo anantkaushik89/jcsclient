@@ -48,7 +48,7 @@ def make_request(url, verb, headers, params, path=None, data=None):
     # Always calculate signature without trailing '/' in url
     if url.endswith('/'):
         url = url[:-1]
-    auth_obj = auth_handler.Authorization(url, verb, access_key, 
+    auth_obj = auth_handler.Authorization(url, verb, access_key,
                                           secret_key, headers)
     auth_obj.add_authorization(params)
 
@@ -60,6 +60,6 @@ def make_request(url, verb, headers, params, path=None, data=None):
     request_string = request_string[:-1]
     global common_headers
     headers.update(common_headers)
-    return requests.request(verb, request_string, data=data, 
+    return requests.request(verb, request_string, data=data,
                             verify=config.check_secure(),
                             headers=headers)

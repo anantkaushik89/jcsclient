@@ -48,7 +48,7 @@ def load_service(service):
     try:
         current_mod = get_dir_name(__file__)
         return importlib.import_module('.' + service,
-                                      package=current_mod)
+                                       package=current_mod)
     except ImportError as ie:
         raise exception.ServiceNotFound(service)
 
@@ -105,7 +105,7 @@ def join_path(path_a, path_b):
     """Join the paths given as inputs to form final path
 
     param path_a: String representing path as prefix
-    
+
     param path_b: String representing path as suffix
 
     return: string with joined path
@@ -203,6 +203,7 @@ def push_indexed_params(params, key, vals):
                 msg = 'Bad request syntax. Please see help for valid request.'
                 raise ValueError(msg)
 
+
 def get_protocol_and_host(url):
     """Validate a given url and extract the protocol and
        host from given url.
@@ -222,6 +223,7 @@ def get_protocol_and_host(url):
         return (None, None)
     else:
         return (url_parts.group(1), url_parts.group(2))
+
 
 def populate_params_from_cli_args(params, args):
     """After the argparser has processed args, populate the

@@ -1,0 +1,30 @@
+NAME:
+    delete-group
+
+
+DESCRIPTION:
+    Deletes the group in your JCS account.
+
+
+SYNOPSIS:
+    delete-group [--name <value>] 
+    delete-group [--id <value>]
+
+
+OPTIONS:
+    --name (string)
+    The name of the group to delete.
+    This parameter is optional.
+
+
+    --id (string)
+    The id of the group to delete.
+    This parameter is optional.
+
+    Either of name or id has to be supplied.
+
+EXAMPLES:
+    jcs iam delete-group --name group1
+
+    jcs iam delete-group --id 121132143253444444444444
+

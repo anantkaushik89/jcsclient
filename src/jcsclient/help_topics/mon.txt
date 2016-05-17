@@ -1,0 +1,18 @@
+
+NAME :
+    mon
+
+
+DESCRIPTION :
+    JCS monitoring manages monitoring of user resources
+    like instances, volumes, storage
+
+
+AVAILABLE COMMANDS :
+
+    list-metrics
+    get-metric-statistics
+
+To see detailed help for any command, type
+    jcs mon <command> help
+

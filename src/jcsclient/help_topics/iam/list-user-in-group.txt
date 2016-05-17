@@ -1,0 +1,30 @@
+
+NAME:
+    list-user-in-group
+
+
+DESCRIPTION:
+    Lists users attached to a group
+
+
+SYNOPSIS:
+    list-user-in-group [--id <value>] [--name <value>]
+
+
+OPTIONS:
+    --id (string)
+    The id of the group for which users needs to be listed
+    This parameter is optional.
+
+    --name (string)
+    The name of the group for which users needs to be listed
+    This parameter is optional.
+
+    Either of name or id is required.
+
+
+EXAMPLES:
+    jcs iam list-user-in-group --id efef553d4a3f4a83b0824aad679c1517
+
+    jcs iam list-user-in-group --name testgroup123
+

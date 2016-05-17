@@ -39,6 +39,7 @@ endpoints = {
     'rds'    : 'https://rds.ind-west-1.jiocloudservices.com/',
     'dss'    : 'https://dss.ind-west-1.jiocloudservices.com/',
     'compute': 'https://compute.ind-west-1.jiocloudservices.com/',
+    'mon'    : 'https://mon.ind-west-1.jiocloudservices.com/'
 }
 
 config_handler = None

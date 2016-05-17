@@ -1,0 +1,19 @@
+NAME:
+    list-groups
+
+
+DESCRIPTION:
+    List the details of all the group in your JCS account.
+
+
+SYNOPSIS:
+    list-groups 
+
+
+OPTIONS:
+    No parameters
+
+
+EXAMPLES:
+    jcs iam list-groups
+

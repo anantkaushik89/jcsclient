@@ -20,4 +20,4 @@ Options
 Examples
     The following example uses the get-object command to download an object from dss:
 
-    jcs dss get-object --bucket text-content --key obj1 local_file 
+    jcs dss get-object --bucket text-content --key obj1 --outfile local_file 

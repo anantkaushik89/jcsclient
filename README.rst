@@ -88,11 +88,6 @@ If you are from your local machine, you might need to add entries to `/etc/hosts
 **NOTE**: Never ever commit your access and secret keys and push to a public repository. You have been warned.
 
 
-.. Documentation
-.. =============
-..
-.. https://client.readthedocs.org/
-
 CLI
 ===
 
@@ -100,41 +95,19 @@ You can use CLI to make an API request, or just get the input which you can use 
 
 ::
 
-    $ jcs compute Action=DescribeInstances          # Make an API call
-    
-    $ jcs --prettyprint compute Action=DescribeInstances # Make API call and pretty-print dictionary
-    
-    $ jcs --curl compute Action=DescribeInstances   # Get the curl input URL
+    $ jcs compute describe-instances
 
-    $ jcs iam CreateUser --Name user1 --Password ABcwqe@12q    # Make an api call to create a user
-
-    $ jcs iam --help    # Displays all iam actions and related client requests
-
-    $ jcs iam CreateUser --help    # Displays help related to action CreateUser
-
-Python Client
-=============
-
-Once you have installed this library in your computer (systemwide or in a virtual environment), you can import the module and start using the associated Python functions. For example, the following file will list all your instances:
+First argument is service name (one of 'compute', 'vpc', 'dss', 'iam' and 'rds'). To get help on a service, execute:
 
 ::
 
-    from client import common
-    from client import cloud
-    
-    # Set up client with parameters as sourced environment variables
-    common.setup_client_from_env_vars()
-    
-    # OR alternatively set up client by passing required parameters. Optional
-    # key-value argument keys are: 'iam_url', 'dss_url' and 'rds_url'
-    common.setup_client('myaccesskey', 'mysecretkey', 'mycomputeurl', 'myvpcurl',
-        iam_url="http://localhost')
-    
-    print cloud.describe_snapshots()
+    jcs <service> --help
 
+To get helptext for a particular command, execute:
 
+::
 
-
+    jcs <service> <command> --help
 
 .. To run the all tests run::
 ..

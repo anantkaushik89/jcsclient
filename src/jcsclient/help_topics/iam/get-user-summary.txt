@@ -1,0 +1,29 @@
+
+NAME: 
+    get-user-summary
+
+
+DESCRIPTION:
+    Returns the summary of the specified user.
+
+
+SYNOPSIS:
+    get-user-summary [--id <value>] [--name <name>]
+
+
+OPTIONS:
+    --id (string)
+    Id of the user for which summary needs to be returned.
+    This parameter is optional.
+
+    --name (string)
+    Name of the user for which summary needs to be returned.
+    This parameter is optional.
+
+    Either of id or name is required.
+
+
+EXAMPLES:
+     jcs iam get-user-summary --id  efef553d4a3f4a83b0824aad679c1517
+
+     jcs iam get-user-summary --name  name_of_user

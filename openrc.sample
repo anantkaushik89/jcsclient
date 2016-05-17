@@ -5,12 +5,6 @@
 #      cp openrc.sample openrc
 # and source that file
 #      source openrc
-#
-# You can also specify your custom service URL, if any, in this file. For
-# example:
-#     RDS_URL=https://compute.ind-west-1.staging.jiocloudservices.com
-# will point to staging endpoint if you add this variable here, and source this
-# file
 
 # Provide your access and secret keys
 export ACCESS_KEY=

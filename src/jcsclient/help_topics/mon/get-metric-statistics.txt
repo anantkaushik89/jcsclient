@@ -1,0 +1,96 @@
+
+NAME :
+    get-metric-statistics
+
+
+DESCRIPTION :
+    list metrics that are currently visible under your JCS
+    account.
+
+    The metrics can be listed on basis of metric name, namespace
+    or on the basis of certain dimensions which returns
+    metrics returned by those dimensions. For complete list of 
+    metrics, refer to monitoring help guide for APIs.
+
+
+SYNOPSIS :
+    get-metric-statistics
+    --namespace <value>
+    --metric-name <value>
+    [--dimensions <value>]
+    --start-time <value>
+    --end-time <value>
+    --period <value>
+    --statistics <value>
+    [--unit <value>]
+
+
+OPTIONS :
+    --namespace (string)
+    The namespace of the metric, with or without spaces.
+
+    --metric-name (string)
+    The name of the metric, with or without spaces.
+
+    --dimensions (list)
+    A list of dimensions describing qualities of the metric.
+    Shorthand Syntax:
+    Name=string,Value=string ...
+
+    --start-time (timestamp)
+    The time stamp to use for determining the first datapoint to return. The value specified is inclusive; results include datapoints with the time stamp specified. The time stamp must be in ISO 8601 UTC format (e.g., 2014-09-03T23:00:00Z).
+    "Note
+    The specified start time is rounded down to the nearest value. Datapoints are returned for start times up to two weeks in the past. Specified start times that are more than two weeks in the past will not return datapoints for metrics that are older than two weeks.
+    Data that is timestamped 24 hours or more in the past may take in excess of 48 hours to become available from submission time using get-metric-statistics."
+
+    --end-time (timestamp)
+    The time stamp to use for determining the last datapoint to return. The value specified is exclusive; results will include datapoints up to the time stamp specified. The time stamp must be in ISO 8601 UTC format (e.g., 2014-09-03T23:00:00Z).
+
+    --period (integer)
+    The granularity, in seconds, of the returned datapoints. period must be at least 60 seconds and must be a multiple of 60. The default value is 60.
+
+    --statistics (list)
+    The metric statistics to return. For information about specific statistics returned by GetMetricStatistics, see statistics in the JioCloudServices Monitoring Developer Guide .
+    Syntax:
+    "string" "string" ...
+    
+    Where valid values are:
+        SampleCount
+        Average
+        Sum
+        Minimum
+        Maximum
+
+    --unit (string)
+    The unit for the metric.
+    Possible values:
+        Seconds
+        Microseconds
+        Milliseconds
+        Bytes
+        Kilobytes
+        Megabytes
+        Gigabytes
+        Terabytes
+        Bits
+        Kilobits
+        Megabits
+        Gigabits
+        Terabits
+        Percent
+        Count
+        Bytes/Second
+        Kilobytes/Second
+        Megabytes/Second
+        Gigabytes/Second
+        Terabytes/Second
+        Bits/Second
+        Kilobits/Second
+        Megabits/Second
+        Gigabits/Second
+        Terabits/Second
+        Count/Second
+        None
+
+EXAMPLES :
+    jcs mon get-metric-statistics --metric-name CPUUtilization --start-time 2014-04-08T23:18:00 --end-time 2014-04-09T23:18:00 --period 3600 --namespace JCS/Compute --statistics Maximum --dimensions Name=InstanceId,Value=i-abcdef

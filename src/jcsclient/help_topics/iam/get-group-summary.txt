@@ -1,0 +1,29 @@
+
+NAME: 
+    get-group-summary
+
+
+DESCRIPTION:
+    Returns the summary of the specified group.
+
+
+SYNOPSIS:
+    get-group-summary [--id <value>] [--name <name>]
+
+
+OPTIONS:
+    --id (string)
+    Id of the group for which summary needs to be returned.
+    This parameter is optional.
+
+    --name (string)
+    Name of the group for which summary needs to be returned.
+    This parameter is optional.
+
+    Either of id or name is required.
+
+
+EXAMPLES:
+     jcs iam get-group-summary --id  efef553d4a3f4a83b0824aad679c1517
+
+     jcs iam get-group-summary --name  name_of_group

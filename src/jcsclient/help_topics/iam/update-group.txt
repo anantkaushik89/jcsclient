@@ -1,0 +1,29 @@
+
+
+NAME:
+    update-group
+
+DESCRIPTION:
+    Updates the name and description of a group.
+
+SYNOPSIS:
+    update-group --id <value> --name <value> --new-name <value> -new-group <value>
+
+OPTIONS:
+    --id (string)
+    The id of the group which needs to be updated.
+
+    --name (string)
+    The name of the group which needs to be update. Atleast one of --id or --name should be specified.
+
+    --new-name (string)
+     New name of the group
+
+    --new-description(string)
+    New description of the group. Alreast one of --new-name and --new-description needs to be specified.
+
+EXAMPLES:
+   jcs iam update-group --id  efef553d4a3f4a83b0824aad679c1517 --new-name test_group_1 --new-description "The new description of the group"
+
+   jcs iam update-group --name old_group_name --new-name test_group_1 --new-description "The new description of the group"
+

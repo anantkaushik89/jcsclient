@@ -1,0 +1,30 @@
+NAME:
+    get-group
+
+
+DESCRIPTION:
+    Retrieves information for a specified group for your JCS account.
+
+
+SYNOPSIS:
+    get-group [--name <value>] 
+    get-group [--id <value>]
+
+
+OPTIONS:
+    --name (string)
+    The name of the group to retrieve information for.
+    This parameter is optional.
+
+
+    --id (string)
+    The id of the group to retrieve information for
+    This parameter is optional.
+
+    Either of name or id has to be supplied.
+
+EXAMPLES:
+    jcs iam get-group --name group1
+
+    jcs iam get-group --id 121132143253444444444444
+

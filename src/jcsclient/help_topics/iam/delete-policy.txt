@@ -1,0 +1,24 @@
+
+NAME:
+    delete-policy
+
+
+DESCRIPTION:
+    Deletes a policy for your JCS account.
+
+
+SYNOPSIS:
+    delete-policy --name <value> | --id <value>
+
+
+OPTIONS:
+    --name (string)
+    The name of the policy.
+
+    --id (string)
+    The id of the policy.
+
+EXAMPLES:
+    jcs iam delete-policy --name Policy123
+
+    jcs iam delete-policy --id 1a4e789ac85c985b3495f3495743a5e8

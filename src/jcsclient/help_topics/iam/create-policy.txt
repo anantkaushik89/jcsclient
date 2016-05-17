@@ -1,0 +1,19 @@
+
+NAME:
+    create-policy
+
+
+DESCRIPTION:
+    Creates a new policy for your JCS account.
+
+
+SYNOPSIS:
+    create-policy --policy-document <value> 
+
+
+OPTIONS:
+    --policy-document (string)
+    The policy document for the policy
+
+EXAMPLES:
+    jcs iam create-policy --policy-document "{\"name\": \"a1bc2443\", \"statement\": [{\"action\": [\"jrn:jcs:dss:ListBucket\"], \"resource\": [\"jrn:jcs:dss:012345678901:Bucket:Bucket123\"], \"effect\": \"allow\"}]}"

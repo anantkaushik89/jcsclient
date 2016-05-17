@@ -1,0 +1,31 @@
+
+NAME:
+    attach-policy-to-group 
+
+
+DESCRIPTION:
+    Attaches a specified user based policy to a specified JCS IAM group. You must have the AttachPolicyToGroup permissions to run this request
+
+
+SYNOPSIS:
+    attach-policy-to-group --policy-id <value> --group-id <value> 
+	attach-policy-to-group --policy-name <value> --group-name <value> 
+
+
+OPTIONS:
+    --policy-id (string)
+    The policy id of the user based policy to be attached.
+
+    --group-id (string)
+    The Group ID of the group to which policy needs to be attached. 
+
+    --policy-name (string)
+    The policy name of the user based policy to be attached.
+
+    --group-name (string)
+    The Group Name of the group to which policy needs to be attached. 
+
+EXAMPLES:
+    jcs iam attach-policy-to-group --policy-id efef553d4a3f4a83b0824aad679c1517 --group-id b93a575fabd34c8fbe2b33b702781f72
+
+    jcs iam attach-policy-to-group --policy-name testpolicy --group-name testgroup56

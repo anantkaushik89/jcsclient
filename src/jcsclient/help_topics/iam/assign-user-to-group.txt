@@ -1,0 +1,38 @@
+
+NAME:
+    assign-user-to-group
+
+
+DESCRIPTION:
+    Assign a user to a group in your JCS account.
+
+
+SYNOPSIS:
+    assign-user-to-group [--user-name <value>] [--group-name <value>]
+    assign-user-to-group [--user-id <value>] [--group-name <value>]
+    assign-user-to-group [--user-name <value>] [--group-id <value>] 
+    assign-user-to-group [--user-id <value>] [--group-id <value>]
+
+
+OPTIONS:
+    --user-name (string)
+    The name of user to be assigned to the group.
+
+    --user-id (string)
+    The id of the user to be assigned to the group.
+
+    --group-name (string)
+    The name of the group, the user should be assigned to. 
+
+    --group-id (string)
+    The id of the group, the user should be assigned to.
+
+
+EXAMPLES:
+    jcs iam assign-user-to-group --user-name test-user --group-name test-group
+
+    jcs iam assign-user-to-group --user-id 123456 --group-id group1111
+
+    jcs iam assign-user-to-group --user-name test-user --group-name test-group
+
+    jcs iam assign-user-to-group --user-id 123 --group-id group1111

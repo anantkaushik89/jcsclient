@@ -1,0 +1,31 @@
+
+NAME:
+    create-user
+
+
+DESCRIPTION:
+    Creates a new user for your JCS account.
+
+
+SYNOPSIS:
+    create-user --name <value> [--password <value>] [--email <value>]
+
+
+OPTIONS:
+    --name (string)
+    The name of the user to create.
+
+    --password (string)
+    Assign a password to the user.
+    This parameter is optional.
+
+    --email (string)
+    The email id of the user.
+    This paramater is optional.
+
+EXAMPLES:
+    jcs iam create-user --name user1
+
+    jcs iam create-user --name user2 --password U^se11rtZ%
+
+    jcs iam create-user --name user3 --password U^se11rtZ% --email user3@xyz.com

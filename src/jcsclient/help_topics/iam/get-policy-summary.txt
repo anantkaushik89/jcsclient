@@ -1,0 +1,25 @@
+
+NAME:
+    get-policy-summary
+
+
+DESCRIPTION:
+    Retrieves summary information about a specified policy including the attached _entities, about a specified JCS IAM user based policy.
+
+
+SYNOPSIS:
+    get-policy-summary --name <value> 
+	get-policy-summary --id <value>
+
+
+OPTIONS:
+    --name (string)
+    The name of the policy whose summary to be fetched.
+
+    --id (string)
+    The id of the policy whose summary to be fetched.
+
+EXAMPLES:
+    jcs iam get-policy-summary --name testpolicy23
+
+    jcs iam get-policy-summary --id efef553d4a3f4a83b0824aad679c1517

@@ -94,7 +94,7 @@ class Controller(object):
         """
         return key_pair.describe_key_pairs(self.url, self.verb,
                                            self.headers, self.version, args)
- 
+
     def import_key_pair(self, args):
         """
         Import the public key from an RSA keypair that was
@@ -108,7 +108,7 @@ class Controller(object):
         """
         return key_pair.import_key_pair(self.url, self.verb, self.headers,
                                         self.version, args)
- 
+
     def describe_instances(self, args):
         """
         Describes instances in your account
@@ -123,7 +123,7 @@ class Controller(object):
         """
         return instance.describe_instances(self.url, self.verb,
                                            self.headers, self.version, args)
- 
+
     def stop_instances(self, args):
         """
         Stop instances in your account
@@ -135,7 +135,7 @@ class Controller(object):
         """
         return instance.stop_instances(self.url, self.verb,
                                        self.headers, self.version, args)
- 
+
     def start_instances(self, args):
         """
         Start instances in your account
@@ -147,7 +147,7 @@ class Controller(object):
         """
         return instance.start_instances(self.url, self.verb,
                                         self.headers, self.version, args)
- 
+
     def reboot_instances(self, args):
         """
         Reboot instances in your account
@@ -172,16 +172,16 @@ class Controller(object):
         return instance.terminate_instances(self.url, self.verb,
                                             self.headers, self.version,
                                             args)
- 
+
     def get_password_data(self, args):
         """
-        Get password for instance in your account. You 
-        need to also provide the private key file to 
+        Get password for instance in your account. You
+        need to also provide the private key file to
         get unencrypted password data.
 
         param args: Arguments passed to the function
 
-        The function expects the following as input 
+        The function expects the following as input
         1. Instance id
         2. Private key file path (Optional)
         3. Passphrase (incase one is set for the key file)
@@ -189,14 +189,14 @@ class Controller(object):
         return instance.get_password_data(self.url, self.verb,
                                           self.headers, self.version,
                                           args)
- 
+
     def describe_instance_types(self, args):
         """
         Gives a description of instance types present.
 
         param args: Arguments passed to the function
 
-        The function expects either no input or a list of 
+        The function expects either no input or a list of
         specific instance types to describe
         """
         return instance.describe_instance_types(self.url, self.verb,

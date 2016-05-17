@@ -1,0 +1,19 @@
+NAME:
+    list-users
+
+
+DESCRIPTION:
+    List the details of all the users in your JCS account.
+
+
+SYNOPSIS:
+    list-users
+
+
+OPTIONS:
+    No parameters
+
+
+EXAMPLES:
+    jcs iam list-users
+

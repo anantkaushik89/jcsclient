@@ -1,0 +1,32 @@
+
+NAME:
+    delete-user
+
+
+DESCRIPTION:
+    Deletes a specified user.
+
+
+SYNOPSIS:
+    delete-user [--name <value>] 
+    delete-user [--id <value>]
+
+
+OPTIONS:
+    --name (string)
+    The name of the user to delete.
+    This parameter is optional.
+
+    --id (string)
+    The id of the user to delete.
+    This parameter is optional.
+
+    Either of name or id has to be supplied.
+
+
+EXAMPLES:
+    jcs iam delete-user --name user1
+
+    jcs iam delete-user --id 1212433ads34ee344231323as2323
+
+    jcs iam create-user --name user3 --password U^se11rtZ% --email user3@xyz.com

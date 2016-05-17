@@ -1,0 +1,19 @@
+
+NAME:
+    list-resource-based-policies
+
+
+DESCRIPTION:
+    List the details of all the resource based policies in your JCS account.
+
+
+SYNOPSIS:
+    list-resource-based-policies 
+
+
+OPTIONS:
+    No parameters
+
+EXAMPLES:
+    jcs iam list-resource-based-policies
+

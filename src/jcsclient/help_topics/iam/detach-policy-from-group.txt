@@ -1,0 +1,31 @@
+
+NAME:
+    detach-policy-from-group 
+
+
+DESCRIPTION:
+    Detaches a specified user based policy from a specified group. You must have the DetachPolicyFromGroup permissions to run this request..
+
+
+SYNOPSIS:
+    detach-policy-from-group --policy-id <value> --group-id <value> 
+	detach-policy-from-group --policy-name <value> --group-name <value> 
+
+
+OPTIONS:
+    --policy-id (string)
+    The policy id of the user based policy to be detached.
+
+    --group-id (string)
+    The group ID of the group from which policy needs to be detached. 
+
+    --policy-name (string)
+    The policy name of the user based policy to be detached.
+
+    --group-name (string)
+    The group Name of the group from which policy needs to be detached. 
+
+EXAMPLES:
+    jcs iam detach-policy-from-group --policy-id efef553d4a3f4a83b0824aad679c1517 --group-id b93a575fabd34c8fbe2b33b702781f72
+
+    jcs iam detach-policy-from-group --policy-name testpolicy --group-name testgroup32

@@ -1,0 +1,31 @@
+
+NAME:
+    detach-policy-from-user 
+
+
+DESCRIPTION:
+    Detaches a specified user based policy from a specified user. You must have the DetachPolicyFromUser permissions to run this request..
+
+
+SYNOPSIS:
+    detach-policy-from-user --policy-id <value> --user-id <value> 
+	detach-policy-from-user --policy-name <value> --user-name <value> 
+
+
+OPTIONS:
+    --policy-id (string)
+    The policy id of the user based policy to be detached.
+
+    --user-id (string)
+    The User ID of the user from whom policy needs to be detached. 
+
+    --policy-name (string)
+    The policy name of the user based policy to be detached.
+
+    --user-name (string)
+    The User Name of the user from whom policy needs to be detached. 
+
+EXAMPLES:
+    jcs iam detach-policy-from-user --policy-id efef553d4a3f4a83b0824aad679c1517 --user-id b93a575fabd34c8fbe2b33b702781f72
+
+    jcs iam detach-policy-from-user --policy-name testpolicy --user-name testuser32

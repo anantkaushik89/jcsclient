@@ -1,0 +1,25 @@
+
+NAME:
+    delete-resource-based-policy
+
+
+DESCRIPTION:
+    Deletes the resource based policy in your JCS account.
+
+
+SYNOPSIS:
+    delete-resource-based-policy --name <value> 
+    delete-resource-based-policy --id <value>
+
+
+OPTIONS:
+    --name (string)
+    The name of the policy which is to be deleted.
+
+    --id (string)
+    The id of the policy which is to be deleted.
+
+EXAMPLES:
+    jcs iam delete-resource-based-policy --name RBP-1
+    jcs iam delete-resource-based-policy --id efef553d4a3f4a83b0824aad679c1517
+
